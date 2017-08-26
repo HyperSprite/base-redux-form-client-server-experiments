@@ -1,0 +1,126 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,500');
+// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css');
+
+@import 'styles/themes/_base-colors.scss';
+@import 'styles/themes/_bootstrap-colors.scss';
+@import 'styles/components/_form';
+
+html {
+  background-color: $color-b4;
+  // color: $color-g2;
+}
+
+.scroll-to-bottom {
+  margin-top: 20vh;
+  margin-bottom: 56vh;
+}
+
+/*Site*/
+.site {
+  // height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background-image: url('../assets/background_image_with_overlay.jpg');
+  background-color: $color-b4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.site-main {
+  box-sizing: border-box;
+  margin-top: 72px;
+}
+
+.site-main::after {
+  content: '\00a0';
+  display: block;
+  margin-top: 10vh;
+  height: 0px;
+  visibility: hidden;
+}
+
+.site-footer {
+  box-sizing: border-box;
+}
+
+.main-flex-container{
+  display: flex;
+}
+
+.main-sidebar {
+  height: 1em;
+  flex: 2 2 auto;
+}
+
+.main {
+  flex: 1 2 auto;
+}
+
+/*Navbar*/
+.navbar-brand {
+  font-weight: bold !important;
+  font-size: 1.4em !important;
+}
+
+.nav-item {
+  font-weight: bold;
+  font-size: 1.3em
+}
+
+.nav-flex-display {
+  display: flex;
+}
+
+.nav-flex-sidebar {
+  height: 1em;
+  flex: 2 2 auto;
+}
+
+.nav-flex-main {
+  flex: 1 2 auto;
+  justify-content: center;
+}
+
+/*Landing Page*/
+.landing-page {
+  background-color: $color-b3;
+  color: $color-w1;
+}
+
+/*Jumbotron*/
+.jumbotron {
+  margin-top: 10vh;
+  /*background-color: rgba(0,0,0,0.1);*/
+  background-color: inherit;
+}
+
+.jumbotron button,
+.jumbotron a.btn-lg {
+  font-size: 2em;
+  font-weight: 600;
+  margin-left: 0px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.6);
+}
+
+.jumbotron h1,
+.jumbotron p {
+  color: $color-w1;
+}
+
+.space {
+  content: '\00a0';
+}
+
+
+/*Loading component*/
+.loading {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

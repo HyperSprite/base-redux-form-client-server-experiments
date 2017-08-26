@@ -1,0 +1,56 @@
+const formValues = [
+  {
+    contentName: 'drugName',
+    contentLabel: 'Name',
+    contentAlt: '',
+    contentOptions: null,
+    contentHelp: '',
+    contentType: 'text',
+    componentType: 'Input',
+  },
+  {
+    contentName: 'drugDosage',
+    contentLabel: 'Dosage',
+    contentAlt: '',
+    contentOptions: ['10mg', '20mg', '30mg', '40mg'],
+    contentHelp: '',
+    contentType: 'text',
+    componentType: 'Input',
+  },
+  {
+    contentName: 'drugForm',
+    contentLabel: 'Form',
+    contentAlt: '',
+    contentOptions: ['Capsule', 'Liquid'],
+    contentHelp: '',
+    contentType: 'text',
+    componentType: 'Input',
+  },
+  {
+    contentName: 'drugUseGeneric',
+    contentLabel: 'Include Generic',
+    contentOptions: ['No Generics', 'Generic'],
+    contentHelp: '',
+    contentType: 'checkbox',
+    componentType: 'Input',
+  },
+  {
+    contentName: 'drugUseBranded',
+    contentLabel: 'Include Brands',
+    contentOptions: ['No Brands', 'Brands'],
+    contentHelp: '',
+    contentType: 'checkbox',
+    componentType: 'Input',
+  },
+  {
+    contentName: 'drugQuantity',
+    contentLabel: 'Quantity',
+    contentAlt: '',
+    contentOptions: null,
+    contentHelp: '',
+    contentType: 'text',
+    componentType: 'Input',
+  },
+];
+
+export default formValues;

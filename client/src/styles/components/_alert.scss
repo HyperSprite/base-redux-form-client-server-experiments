@@ -1,0 +1,11 @@
+@import 'styles/themes/_base-colors.scss';
+
+.form-error {
+  color: $color-er;
+  font-weight: bold;
+}
+
+.form-warning {
+  color: $color-wa;
+  font-weight: bold;
+}

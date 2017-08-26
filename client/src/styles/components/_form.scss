@@ -1,0 +1,68 @@
+/*Forms*/
+
+.form-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-main {
+  background-color: rgba(255,255,255,0.5);
+  padding: 1em;
+  border-radius: 4px;
+  min-width: 500px;
+}
+
+@media (max-width: 600px) {
+  .form-main {
+    min-width: 280px;
+  }
+}
+
+.next {
+  position: absolute;
+  bottom: 0;
+}
+
+.form-box {
+  margin-bottom: 2em;
+  padding: 0.5em;
+  color: inherit;
+  border: 2px solid rgba(0,0,0,0.1);
+  border-radius: 1px;
+}
+
+.form-box button {
+  margin: 4px;
+}
+
+.edit-label,
+.static-label {
+  display: block;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-bottom: 0.3em;
+  padding-top: 0.1em;
+  line-height: 3em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.edit-txt,
+.static-txt {
+  font-size: 1.6em;
+}
+
+.static-list,
+.static-txt {
+  margin-left: 1em;
+}
+
+.edit-txt {
+  border: 0;
+  outline:0px !important;
+  box-shadow: 0;
+}
+
+.inline {
+  display: inline;
+}
