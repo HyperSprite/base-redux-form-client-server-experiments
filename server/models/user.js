@@ -52,12 +52,39 @@ const userPhoneNumbers = new Schema({
 });
 
 const userSchema = new Schema({
-  email: { type: String, lowercase: true },
-  password: String,
-  userName: String, // for posting
+  email: {
+    type: String,
+    required: [true, 'Email is required'],
+    lowercase: true,
+    index: {
+      unique: [true, 'Duplicate email address'],
+      sparse: true,
+    } },
+  password: {
+    type: String,
+    required: [true, 'Password is required'],
+    validate: {
+      validator: password => password.length > 9,
+      message: 'Password must be at least 10 characters',
+    },
+  },
+  userName: {
+    type: String,
+    lowercase: true,
+    index: {
+      unique: [true, 'Duplicate User Name'],
+      sparse: true,
+    },
+  }, // for posting
   accessToken: String,
   resourceState: Number,
-  firstname: String,
+  firstname: {
+    type: String,
+    validate: {
+      validator: () => {},
+      message: 'Name must be longer than 1 character',
+    },
+  },
   lastname: String,
   profileMedium: String,
   profile: String,
